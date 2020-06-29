@@ -1,26 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route,Redirect} from "react-router-dom";
+import Navbar from './Features/Nav'
+import routes from "./Routes/index"
+import MenuPage from './Pages/Menu/index';
+import Login from './Pages/Login/index';
+import ChillerPlant from './Pages/ChillerPlant/index'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App=()=>{
+ 
+  return(
+     
+      <React.Fragment>
+      <BrowserRouter>
+        <div>
+          <Navbar/>
+          <Route exact path="/Login" component={Login} />
+          <Route path="/Menu" component={MenuPage} />
+          <Route path="/ChillerPlant" component={ChillerPlant} />
+          {/* <Redirect to={routes.default} /> */}
+        </div>
+      </BrowserRouter>
+    </React.Fragment> 
+  )    
+
 }
 
 export default App;
