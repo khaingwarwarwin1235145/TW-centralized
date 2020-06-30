@@ -1,9 +1,9 @@
-import React,{useState} from 'react';
-import Icon1 from '../../../Config/images/icon1.JPG'
-import Icon2 from '../../../Config/images/icon2.JPG'
-import Icon3 from '../../../Config/images/icon3.JPG'
-import Icon4 from '../../../Config/images/icon4.JPG'
-import Icon5 from '../../../Config/images/icon5.JPG'
+import React from 'react';
+import Icon1 from '../../../Config/images/chiller plant ui_icon.png'
+import Icon2 from '../../../Config/images/environmental monitor ui_icon.png'
+import Icon3 from '../../../Config/images/street light ui_icon.png'
+import Icon4 from '../../../Config/images/solar power ui_icon.png'
+import Icon5 from '../../../Config/images/new iotcomui ui_icon.png'
 import MainMenuCard from '../component/main'
 
 const MainMenuContainer=(props)=>{
@@ -15,11 +15,11 @@ const MainMenuContainer=(props)=>{
                 loadingValue={"50%"} ConsumptionValue={"150.3Kw"} ErrorValue={"7"}/>
 
                 <MainMenuCard title={"Acbel environmental monitor UI"}
-                icon={Icon2} loading={"Loading %"} Consumption={"Consumption"} Error={"Error"}
+                icon={Icon2} loading={"Loading%"} Consumption={"Consumption"} Error={"Error"}
                 loadingValue={"50%"} ConsumptionValue={"150.3Kw"} ErrorValue={"7"}
                 />
                 
-                <MainMenuCard title={"Ndhu Streetlight UI"} 
+                <MainMenuCard title={"Ndhu Street light UI"} 
                     icon={Icon3} loading={"Streetlight"} Consumption={"On"} Error={"Error"}
                     loadingValue={"1024"} ConsumptionValue={"90"} ErrorValue={"5"} 
                 />

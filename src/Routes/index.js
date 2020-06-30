@@ -1,12 +1,12 @@
 import Login from '../Pages/Login/index';
-import MenuPage from '../Pages/Menu/index'
+import MainMenuContainer from '../Pages/MainPage/container/maincontainer';
 import ChillerPlant from '../Pages/ChillerPlant/index'
 
 export const RouteName = {
  
-  routeLoginPage: "Login",
+  routeLoginPage: "login",
 
-  routeMenuPage: "Menu",
+  routeMainMenuPage: "main",
   routeChillerPlantPage: "ChillerPlant"
 
 
@@ -16,7 +16,7 @@ export default {
   routes: {
 
     [RouteName.routeLoginPage]: { component: Login },
-    [RouteName.routeMenuPage]: { component: MenuPage },
+    [RouteName.routeMainMenuPage]: { component: MainMenuContainer },
     [RouteName.routeChillerPlantPage]: { component: ChillerPlant },
    
   },
